@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users System</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my User Registration System</h1>
+
+    </header>
+
+    <main class="container">
+        <h2>New User</h2>
+        <button id="newUser">Add New</button> 
+        <button id="hideForm">Hide Registration</button>
+        <div id="userForm" class="form-container container">
+            <!---name, last name, email, password, confirm password, payment method, color-->
+            <div class="form-control">
+                <label>First Name:</label>
+            <input type="text" id="txtFirstName" placeholder="Name">
+            </div>  
+            <div class="form-control">
+                <label>Last Name:</label>
+            <input type="text" id="txtLastName" placeholder="Last Name">
+            </div>  
+            <div class="form-control">
+                <label>Email:</label>
+            <input type="text" id="txtEmail" placeholder="Email">
+            </div>  
+            <div class="form-control">
+                <label>Password:</label>
+            <input type="password" id="txtPassword" placeholder="Enter Password">
+            </div>  
+            <div class="form-control">
+                <label>Confirm Password:</label>
+            <input type="password" placeholder="Confirm Password">
+            </div> 
+            <button onclick="register()">Register</button>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
